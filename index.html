@@ -52,9 +52,9 @@
       }
 
       .left-box {
-        background-image: url("./images/image-product-desktop.jpg");
+        /* background-image: url("./images/image-product-desktop.jpg"); */
         height: 100%;
-        background-size: cover;
+        /* background-size: cover; */
 
       }
 
@@ -131,7 +131,9 @@
         background-color: hsl(156.32deg 42.22% 17.65%);
       }
 
-      @media only screen and (max-width: 375px) {
+    
+
+      @media only screen and (max-width: 600px) {
         body {
           background-color: hsl(26.25deg 40% 92.16%);
           padding: 15px;
@@ -147,8 +149,8 @@
           margin-top: 15px;
         }
         .left-box {
-          height: 270px;
-          background-position: center;
+          /* height: 270px; */
+          /* background-position: center; */
         }
        
       }
@@ -165,7 +167,11 @@
     <div class="container">
       <div class="left-box">
         <div class="product-pic">
-          <!-- <img class="pic" src="./images/image-product-desktop.jpg" alt="" /> -->
+          <picture>
+            <source media="(max-width:600px)" srcset="./images/image-product-mobile.jpg">
+            <img src="./images/image-product-desktop.jpg" alt="perfume" style="width: 100%; ">
+          </picture>
+          
         </div>
       </div>
       <div class="right-box">
